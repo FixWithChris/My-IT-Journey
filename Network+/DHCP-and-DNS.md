@@ -31,6 +31,54 @@ If DHCP fails: Device receives an APIPA address (169.254.x.x)
 
 ## DNS – Domain Name System
 
+---
+
+## DNS Lookup Breakdown (Root → Authoritative)
+
+When you type a domain like `example.com`, your system doesn't magically know the IP. Here's the behind-the-scenes journey:
+
+1. **Client Device**  
+   - Asks its local DNS resolver (usually your router or ISP).
+
+2. **DNS Resolver (Recursive)**  
+   - If not cached, sends request outward.
+
+3. **Root Server**  
+   - Directs the resolver to the correct **Top-Level Domain (TLD)** server  
+   - Example: For `.com`, it sends it to a `.com` nameserver.
+
+4. **TLD Server**  
+   - Points the resolver to the **Authoritative Name Server** responsible for `example.com`
+
+5. **Authoritative Name Server**  
+   - Responds with the actual IP address for `example.com`
+
+6. **Back to Client**  
+   - Resolver sends final IP to the client  
+   - DNS info is now cached locally for speed
+
+---
+
+### Visual Flow:
+
+Device → Recursive Resolver → Root Server  
+→ TLD Server → Authoritative Server → IP Address
+
+---
+
+### Quick Summary
+
+- **Root Server**: The top of the DNS hierarchy (knows where TLDs live)  
+- **TLD Server**: Manages `.com`, `.net`, `.org`, etc.  
+- **Authoritative Server**: Holds the actual IP info for the requested domain
+
+---
+
+Understanding this flow helps you troubleshoot:
+- Why DNS sometimes takes longer
+- Why a domain might work on one device and not another (due to caching)
+- How DNS is *layered*, not instant
+
 Purpose: Resolves domain names to IP addresses  
 Example: google.com → 142.250.190.206
 
