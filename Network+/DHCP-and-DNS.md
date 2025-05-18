@@ -1,32 +1,30 @@
 # DHCP vs DNS
 
-**Date:** May 2025  
-**Focus:** Core networking services – how IP addresses are assigned and resolved
+Date: May 2025  
+Focus: Understanding how IP addresses are assigned (DHCP) and resolved (DNS)
 
 ---
 
-## What is DHCP?
+## DHCP – Dynamic Host Configuration Protocol
 
-**Dynamic Host Configuration Protocol**
+Purpose: Automatically assigns IP configuration to devices
 
-- Assigns IP addresses automatically to devices on a network  
-- Also assigns:
-  - Subnet mask
-  - Default gateway
-  - DNS server
-- Prevents IP conflicts and manual setup
+Provides:
+- IP address
+- Subnet mask
+- Default gateway
+- DNS server
 
-**Process: DORA**
+DORA Process:
+1. Discover – Client looks for DHCP server  
+2. Offer – Server offers IP lease  
+3. Request – Client requests the lease  
+4. Acknowledge – Server confirms
 
-1. **Discover** – Client sends a broadcast looking for DHCP servers  
-2. **Offer** – Server responds with IP lease offer  
-3. **Request** – Client accepts offer  
-4. **Acknowledge** – Server confirms lease
-
-**Commands:**
-```bash
-ipconfig /release
+Windows Commands:
+ipconfig /release  
 ipconfig /renew
+
 If DHCP fails: Device receives an APIPA address (169.254.x.x)
 
 ---
