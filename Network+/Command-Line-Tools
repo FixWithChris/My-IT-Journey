@@ -1,1 +1,34 @@
+# Networking Commands for A+ / Network+
 
+**Focus:** Core tools to diagnose and resolve network issues
+
+---
+
+## IP Tools
+
+- `ipconfig /all` – View full IP config  
+- `ipconfig /release` & `/renew` – DHCP reset  
+- `ping <IP>` – Basic connectivity  
+- `tracert <host>` – See packet route  
+- `nslookup <domain>` – Check DNS resolution
+
+---
+
+## Troubleshooting Steps
+
+1. Confirm IP address  
+2. Ping gateway  
+3. Ping public IP (8.8.8.8)  
+4. Ping domain name (google.com)  
+5. `tracert` for route analysis  
+6. `netstat -a` to see open ports
+
+---
+
+## Notes
+
+- APIPA (169.254.x.x) = No DHCP response  
+- Use `ipconfig /flushdns` for DNS issues  
+- Layer 1 issues = Check physical cables first
+
+---
