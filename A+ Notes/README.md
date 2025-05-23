@@ -11,14 +11,14 @@ This folder contains structured notes, cheat sheets, and quick-reference guides 
 - [Cheat_Sheet.md](./Cheat_Sheet.md)
 
 ### **Command Line & Tools**
-- [Window-Tools.md](./Window-Tools.md)
+- [Window-Tools.md](./Windows-Tools.md)
 
 ### **Topic Deep Dives**
 - [Mobile Device Tips](./Mobile-Device-Tips.md)
 - [Storage Types Explained](./Storage-Types-Explained.md)
 
 ### **Troubleshooting**
-- See full logs in: [../Troubleshooting](../Troubleshooting)
+- See full logs in: [../Troubleshooting](../A+Troubleshooting)
 
 ---
 
