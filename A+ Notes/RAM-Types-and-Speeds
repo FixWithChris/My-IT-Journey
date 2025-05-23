@@ -1,46 +1,53 @@
 # RAM Types and Speeds
 
-A concise reference of RAM types, their characteristics, speeds, and compatibility for CompTIA A+ Core 1.
+A CompTIA A+ Quick Reference for Memory Types, Speeds, and Compatibility
 
 ---
 
-## 🧠 Types of RAM
+## 📌 RAM Categories
 
-| RAM Type     | Description                                 | Common Use Case                 |
-|--------------|---------------------------------------------|---------------------------------|
-| DRAM         | Dynamic RAM, stores bits in capacitors      | Base memory for PCs             |
-| SRAM         | Static RAM, faster but expensive            | CPU cache (L1/L2/L3)            |
-| SDR SDRAM    | Single Data Rate SDRAM                      | Older systems                   |
-| DDR SDRAM    | Double Data Rate SDRAM                      | Transfers data on both clock edges |
-| DDR2 SDRAM   | Faster, lower power than DDR                | Not backward compatible         |
-| DDR3 SDRAM   | Higher bandwidth, lower voltage             | Still common in older desktops  |
-| DDR4 SDRAM   | Improved speed & efficiency over DDR3       | Current mainstream standard     |
-| DDR5 SDRAM   | Latest standard with higher speeds          | Emerging in modern systems      |
+| Type       | Description                                 | Typical Use        |
+|------------|---------------------------------------------|--------------------|
+| DRAM       | Dynamic RAM – must be constantly refreshed  | General system RAM |
+| SRAM       | Static RAM – faster, no refreshing needed   | CPU cache (L1/L2/L3) |
+| SDR SDRAM  | Single data rate, older tech                | Legacy systems     |
+| DDR SDRAM  | Double data rate – transfers on rising and falling clock edges | DDR generations |
 
 ---
 
-## ⚡ RAM Speeds & Specs
+## 📊 DDR Generations Breakdown
 
-| RAM Type | Speeds (MT/s)      | Voltage   | DIMM Pins | SO-DIMM Pins |
-|----------|--------------------|-----------|-----------|---------------|
-| DDR      | 200–400            | 2.5V      | 184       | 200           |
-| DDR2     | 400–1066           | 1.8V      | 240       | 200           |
-| DDR3     | 800–2133           | 1.5V/1.35V| 240       | 204           |
-| DDR4     | 1600–3200+         | 1.2V      | 288       | 260           |
-| DDR5     | 4800–8400+         | 1.1V      | 288       | TBD           |
-
-> **SO-DIMM = Small Outline DIMM**, used in laptops and SFF PCs.
+| Type   | Speed Range (MT/s) | Voltage   | DIMM Pins | SO-DIMM Pins | Common Use             |
+|--------|--------------------|-----------|-----------|---------------|-------------------------|
+| DDR    | 200–400            | 2.5V      | 184       | 200           | Early desktops/laptops  |
+| DDR2   | 400–1066           | 1.8V      | 240       | 200           | Older PCs               |
+| DDR3   | 800–2133           | 1.5V/1.35V| 240       | 204           | Widespread legacy use   |
+| DDR4   | 1600–3200+         | 1.2V      | 288       | 260           | Current standard        |
+| DDR5   | 4800–8400+         | 1.1V      | 288       | 262 (emerging)| Next-gen systems        |
 
 ---
 
-## 🔁 Compatibility Notes
+## 💻 SO-DIMM vs DIMM
 
-- **Not backward compatible** – You can't mix DDR types (e.g., DDR3 doesn’t fit in a DDR4 slot)
-- **Motherboard must match RAM type and speed**
-- Always check system/motherboard specs before upgrading
+- **DIMM** – Desktop memory
+- **SO-DIMM** – Small Outline, for laptops and compact systems
+
+---
+
+## ⚠️ Compatibility Tips
+
+- DDR generations are **not backward compatible**
+- Voltage, pin layout, and notch placement differ per type
+- Always check **motherboard specs** before installing
 
 ---
 
-> **Exam Tip:** Know the voltage, pin count, and speed ranges of each DDR type. Identify where they're used (laptop vs desktop vs server).
+## 💡 Exam Tips
+
+- Know pin counts for DDR3 (240), DDR4 (288), DDR5 (288)
+- Identify SO-DIMM for laptops (DDR4 SO-DIMM = 260 pins)
+- Understand that speed is in **MT/s (mega-transfers per second)**
 
 ---
+
+“RAM isn’t just about size — it’s about speed, timing, and compatibility.”
