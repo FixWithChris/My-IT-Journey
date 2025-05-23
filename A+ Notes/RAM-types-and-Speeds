@@ -1,0 +1,57 @@
+# RAM Types and Speeds
+
+## Overview
+This document summarizes common RAM types, their characteristics, speeds, and compatibility. Useful for CompTIA A+ Core 1 exam prep and hands-on understanding.
+
+---
+
+## **Types of RAM**
+
+| RAM Type     | Description                                      | Notes                           |
+|--------------|--------------------------------------------------|----------------------------------|
+| DRAM         | Dynamic RAM, stores bits in capacitors           | Requires constant refreshing    |
+| SRAM         | Static RAM, faster and more expensive            | Used in CPU caches              |
+| SDRAM        | Synchronous DRAM                                 | Synchronized with system clock  |
+| DDR SDRAM    | Double Data Rate SDRAM                           | Sends data on both clock edges  |
+| DDR2 SDRAM   | Faster and more efficient than DDR               | Not backward compatible         |
+| DDR3 SDRAM   | Higher bandwidth, lower power                    | Common in older systems         |
+| DDR4 SDRAM   | Higher speed and efficiency than DDR3            | Used in most modern systems     |
+| DDR5 SDRAM   | Increased bandwidth and lower power consumption  | Emerging standard               |
+
+---
+
+## **Common RAM Speeds (by Type)**
+
+| RAM Type   | Common Speeds (MT/s) | Voltage   | Pin Count (DIMM) | Pin Count (SO-DIMM) |
+|------------|----------------------|-----------|-------------------|----------------------|
+| DDR        | 200–400              | 2.5V      | 184               | 200                  |
+| DDR2       | 400–1066             | 1.8V      | 240               | 200                  |
+| DDR3       | 800–2133             | 1.5V/1.35V| 240               | 204                  |
+| DDR4       | 1600–3200+           | 1.2V      | 288               | 260                  |
+| DDR5       | 4800–8400+           | 1.1V      | 288               | TBD                  |
+
+---
+
+## **Important Terms**
+
+- **MT/s (Mega Transfers per second)** – Measures RAM speed (not MHz, though often used interchangeably).
+- **Latency (CL)** – Lower is faster, but must be balanced with speed.
+- **Dual Channel / Triple Channel** – Increases bandwidth by accessing multiple RAM sticks simultaneously.
+- **ECC (Error-Correcting Code)** – Detects and corrects internal RAM errors; used in servers.
+- **Buffered vs. Unbuffered** – Buffered (registered) RAM is more stable, used in enterprise systems.
+
+---
+
+## **Troubleshooting RAM Issues**
+
+- **Symptoms of bad RAM**: random crashes, boot errors, BSODs, memory test failures
+- **Tools**: MemTest86, Windows Memory Diagnostic
+- **Fixes**: reseat RAM, replace module, match speed/type in multi-channel setups
+
+---
+
+## **Tips for A+ Exam**
+
+- Know the differences between RAM types (e.g., DDR3 vs. DDR4)
+- Remember pin counts and voltage
+- Be familiar with RAM installation and troubleshooting steps
