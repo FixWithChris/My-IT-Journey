@@ -1,0 +1,84 @@
+# Virtualization and Cloud Computing – CompTIA A+ Core 1 (220-1101)
+
+Objective 4.0: Understand the concepts and technologies behind virtualization and cloud computing.
+
+---
+
+## 🧠 What is Virtualization?
+
+**Virtualization** allows multiple virtual machines (VMs) to run on a single physical machine using a **hypervisor**.
+
+### Key Concepts:
+- **Host Machine** – Physical computer running the hypervisor
+- **Guest Machine** – Virtual machine running inside the host
+- **Hypervisor** – Software that manages VMs
+
+| Type          | Description                                 |
+|---------------|---------------------------------------------|
+| Type 1 (Bare Metal) | Installed directly on hardware (e.g., ESXi) |
+| Type 2 (Hosted)     | Runs inside an OS (e.g., VirtualBox, Hyper-V) |
+
+---
+
+## 🛠 Virtualization Requirements
+
+- **CPU Support** – Intel VT-x or AMD-V
+- **RAM** – Sufficient memory to support multiple VMs
+- **Storage** – Large and fast enough to host virtual disk images
+- **Hypervisor Software** – VirtualBox, Hyper-V, VMware Workstation, etc.
+
+---
+
+## 🖥 VM Features to Know
+
+| Feature         | Purpose                                      |
+|------------------|----------------------------------------------|
+| Snapshots       | Save VM state before updates or changes       |
+| Virtual Switches | Allow communication between VMs or network   |
+| NAT / Bridged    | Determines VM's network visibility            |
+| Virtual Disk     | File that simulates a hard drive (VHD/VMDK)  |
+
+---
+
+## ☁️ What is Cloud Computing?
+
+**Cloud computing** allows users to access and manage resources (apps, data, infrastructure) over the internet instead of local devices.
+
+### Key Benefits:
+- On-demand access
+- Scalability
+- Cost-effective (pay-as-you-go)
+
+---
+
+## ☁️ Cloud Types
+
+| Type        | Description                        | Example                          |
+|-------------|------------------------------------|----------------------------------|
+| **SaaS**    | Software-as-a-Service              | Google Docs, Office 365          |
+| **PaaS**    | Platform-as-a-Service              | Heroku, Google App Engine        |
+| **IaaS**    | Infrastructure-as-a-Service        | AWS EC2, Azure Virtual Machines  |
+
+---
+
+## ☁️ Deployment Models
+
+| Model       | Description                           |
+|-------------|---------------------------------------|
+| **Public**  | Accessible to anyone (e.g., Google Cloud) |
+| **Private** | Internal use within an organization      |
+| **Hybrid**  | Mix of public and private cloud         |
+| **Community** | Shared infrastructure among orgs      |
+
+---
+
+## 💡 Exam Tips
+
+- Know the **difference between SaaS, PaaS, IaaS**
+- Understand hypervisor types and VM behavior
+- Cloud = hosted on remote servers, accessed via browser/app
+- Virtualization = locally hosted, managed with hypervisor
+
+---
+
+> "Virtualization brings flexibility. Cloud brings freedom."
