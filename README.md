@@ -1,4 +1,5 @@
 ![The Lab Banner](./The_Lab_Banner.png)# My-IT-Journey
+---
 Documenting my path through A+, Network+, and Security+
 # My IT Journey
 
