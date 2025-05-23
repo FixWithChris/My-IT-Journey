@@ -18,7 +18,7 @@ This folder contains structured notes, cheat sheets, and quick-reference guides 
 - [Storage Types Explained](./Storage-Types-Explained.md)
 
 ### **Troubleshooting**
-- See full logs in: [../Troubleshooting](../A+Troubleshooting)
+- See full logs in: [../Troubleshooting](../A+-Troubleshooting)
 
 ---
 
