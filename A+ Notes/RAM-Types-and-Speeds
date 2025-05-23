@@ -1,31 +1,46 @@
 # RAM Types and Speeds
 
-## Overview
-This document summarizes common RAM types, their characteristics, speeds, and compatibility.
+A concise reference of RAM types, their characteristics, speeds, and compatibility for CompTIA A+ Core 1.
 
 ---
 
-## Types of RAM
+## 🧠 Types of RAM
 
-| RAM Type    | Description                                   | Notes                                    |
-|-------------|-----------------------------------------------|------------------------------------------|
-| DRAM        | Dynamic RAM, stores bits in capacitors        | Requires constant refreshing             |
-| SRAM        | Static RAM, faster and more expensive         | Used in CPU cache systems                |
-| SDR SDRAM   | Synchronous DRAM                              | Synchronized with system bus             |
-| DDR SDRAM   | Double Data Rate SDRAM                        | Sends data on both clock edges           |
-| DDR2 SDRAM  | Faster and more efficient than DDR            | Not backward compatible                  |
-| DDR3 SDRAM  | Higher bandwidth, lower power                 | Common in older systems                  |
-| DDR4 SDRAM  | Higher speed and efficiency than DDR3         | Used in most modern systems              |
-| DDR5 SDRAM  | Increased bandwidth and lower power consumption | Emerging standard                     |
+| RAM Type     | Description                                 | Common Use Case                 |
+|--------------|---------------------------------------------|---------------------------------|
+| DRAM         | Dynamic RAM, stores bits in capacitors      | Base memory for PCs             |
+| SRAM         | Static RAM, faster but expensive            | CPU cache (L1/L2/L3)            |
+| SDR SDRAM    | Single Data Rate SDRAM                      | Older systems                   |
+| DDR SDRAM    | Double Data Rate SDRAM                      | Transfers data on both clock edges |
+| DDR2 SDRAM   | Faster, lower power than DDR                | Not backward compatible         |
+| DDR3 SDRAM   | Higher bandwidth, lower voltage             | Still common in older desktops  |
+| DDR4 SDRAM   | Improved speed & efficiency over DDR3       | Current mainstream standard     |
+| DDR5 SDRAM   | Latest standard with higher speeds          | Emerging in modern systems      |
 
 ---
 
-## Common RAM Speeds (by Type)
+## ⚡ RAM Speeds & Specs
 
-| RAM Type | Common Speeds (MT/s) | Voltage     | Pin Count (DIMM) | Pin Count (SO-DIMM) |
-|----------|----------------------|-------------|------------------|---------------------|
-| DDR      | 200–400              | 2.5V        | 184              | 200                 |
-| DDR2     | 400–1066             | 1.8V        | 240              | 200                 |
-| DDR3     | 800–2133             | 1.5V/1.35V  | 240              | 204                 |
-| DDR4     | 1600–3200+           | 1.2V        | 288              | 260                 |
-| DDR5     | 4800–8400+           | 1.1V        | 288              | TBD                 |
+| RAM Type | Speeds (MT/s)      | Voltage   | DIMM Pins | SO-DIMM Pins |
+|----------|--------------------|-----------|-----------|---------------|
+| DDR      | 200–400            | 2.5V      | 184       | 200           |
+| DDR2     | 400–1066           | 1.8V      | 240       | 200           |
+| DDR3     | 800–2133           | 1.5V/1.35V| 240       | 204           |
+| DDR4     | 1600–3200+         | 1.2V      | 288       | 260           |
+| DDR5     | 4800–8400+         | 1.1V      | 288       | TBD           |
+
+> **SO-DIMM = Small Outline DIMM**, used in laptops and SFF PCs.
+
+---
+
+## 🔁 Compatibility Notes
+
+- **Not backward compatible** – You can't mix DDR types (e.g., DDR3 doesn’t fit in a DDR4 slot)
+- **Motherboard must match RAM type and speed**
+- Always check system/motherboard specs before upgrading
+
+---
+
+> **Exam Tip:** Know the voltage, pin count, and speed ranges of each DDR type. Identify where they're used (laptop vs desktop vs server).
+
+---
