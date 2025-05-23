@@ -8,7 +8,7 @@ This folder contains structured notes, cheat sheets, and quick-reference guides 
 ## **Quick Access**
 
 ### **Cheat Sheet**
-- [Cheat_Sheet.md](./Cheat_Sheet.md)
+- [Cheat-Sheet.md](./Cheat-Sheet.md)
 
 ### **Command Line & Tools**
 - [Windows-Tools.md](./Windows-Tools.md)
