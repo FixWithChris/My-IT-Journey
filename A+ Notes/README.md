@@ -16,7 +16,7 @@ This folder contains structured notes, cheat sheets, and quick-reference guides 
 ### **Topic Deep Dives**
 - [Mobile Device Tips](./Mobile-Device-Tips.md)
 - [Storage Types Explained](./Storage-Types-Explained.md)
-
+- [Common Printer Issues](./Common-Printer-Issues.md)
 ### **Troubleshooting**
 - See full logs in: [../Troubleshooting](../A+_Troubleshooting)
 
