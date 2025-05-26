@@ -1,0 +1,17 @@
+## TryHackMe Session – May 25, 2025
+
+**Room:** Linux Fundamentals 2  
+**Time Spent:** 1 hour 30 minutes  
+**Topics Covered:**
+- Navigating directories (`cd`, `pwd`)
+- Viewing and manipulating files (`cat`, `echo`, `grep`)
+- Input/output redirection
+- File permissions (started)
+
+**Wins:**
+- Learned how to exit `cat` with `Ctrl + D`
+- Understood how `grep` searches through logs
+- Improved my CLI confidence
+
+**Next Up:**
+- Finish the room and take notes on `chmod` and `chown`
