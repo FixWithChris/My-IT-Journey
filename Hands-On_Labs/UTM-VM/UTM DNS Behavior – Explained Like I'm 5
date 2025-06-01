@@ -1,0 +1,79 @@
+# 🧠 UTM DNS Behavior – Explained Like I'm 5
+
+**Date:** 2025-06-01  
+**Environment:** Windows 11 ARM in UTM (v4.6.5)  
+**User:** Chris (ct432)
+
+---
+
+## 🏠 What Happened
+
+Inside my Windows virtual machine, I could:
+
+- ✅ Browse the internet  
+- ✅ Open websites like google.com  
+- ❌ But `nslookup google.com` didn't work  
+- ❌ PowerShell didn't show the usual prompt afterwards
+
+---
+
+## 👦🏽 Imagine This...
+
+> My Windows VM is like a little kid in a house (my Mac).
+
+- When the kid uses a **browser**, he asks:  
+  > “Mom! Where’s Google?”  
+  And Mom (my Mac) replies with the answer.
+
+- But when the kid uses a **walkie-talkie** (`nslookup`), he says:  
+  > “Breaker breaker, where’s Google?”  
+  And no one answers—just static.
+
+---
+
+## 🎯 What This Means
+
+- The browser works because Windows asks **the Mac’s DNS system** directly.  
+- `nslookup` fails because the virtual machine:  
+  - Doesn’t know the proper DNS server  
+  - Or UTM’s network mode doesn’t let the walkie-talkie (low-level tool) reach out
+
+---
+
+## ✅ Do I Need to Fix It?
+
+**No.**  
+As long as websites load and updates work, the walkie-talkie isn’t needed unless I’m doing advanced networking stuff.
+
+But if I ever want to:
+- Use DNS tools from the command line  
+- Do labs that need `nslookup`, `ping`, or `tracert`  
+- Or troubleshoot networks like a real IT tech...
+
+Then I’ll need to either:
+- **Switch UTM to Bridged Networking**, or  
+- **Manually set my DNS to 8.8.8.8 and 1.1.1.1** in PowerShell.
+
+---
+
+## 🧰 Summary
+
+| Tool        | Working? | Why                     |
+|-------------|----------|--------------------------|
+| Browser     | ✅       | Uses internal Mac DNS    |
+| nslookup    | ❌       | Needs direct DNS access  |
+| ping IP     | ✅       | IP-level access is fine  |
+| ping domain | ❌       | DNS name can’t resolve   |
+
+---
+
+## 🧠 Final Thought
+
+> “You don’t always need the walkie-talkie if Mom’s answering the important stuff.”
+
+But it’s good to know how to fix it when you want to be the one in charge.
+
+---
+
+## 🗂️ Tags  
+`utm-dns` `vm-networking` `windows11-arm` `like-im-5` `network-tools`
