@@ -1,29 +1,73 @@
-# 🛡️ Switching Attacks Drill – Network+
+# 🛡️ Switch Security Attacks – Flat Format Version
 
 **User:** Chris (ct432)  
 **Date:** 2025-06-01  
-**Focus:** Layer 2 Attacks + Mitigations (VLAN, Switch Security)
+**Focus:** Layer 2 Threats + Defenses
 
 ---
 
-## 🚨 VLAN Hopping
+**🔥 VLAN Hopping**
 
-### 🔸 Attack Type:
-- Layer 2 attack to **gain access to unauthorized VLANs**
+**Attack Type:**  
+Exploiting VLAN trunking to access unauthorized VLANs.
 
-### 🔹 Techniques:
-1. **Switch Spoofing (802.1Q Spoofing)**  
-   - Attacker pretends to be a switch  
-   - Exploits dynamic trunk negotiation  
-   - Gains access to all VLANs on the trunk
+**Techniques:**  
+1. Switch Spoofing – Attacker mimics a trunking switch using 802.1Q.
+2. Double Tagging – Attacker sends two VLAN tags; inner tag reaches another VLAN.
 
-2. **Double Tagging**  
-   - Inserts two VLAN tags into one Ethernet frame  
-   - First switch strips outer tag  
-   - Inner tag forwards to target VLAN
+**Defense Tactics:**  
+- switchport mode access  
+- switchport nonegotiate  
+- switchport access vlan <ID>  
+- Set native VLAN to unused ID  
+- Disable trunking on access ports  
 
-### 🛡️ Defense Tactics:
-```bash
-switchport mode access
-switchport nonegotiate
-switchport access vlan <ID>
+---
+
+**🔥 MAC Flooding**
+
+**Attack Type:**  
+Overloads the switch’s MAC address table, forcing it to broadcast traffic like a hub.
+
+**Effect:**  
+Attacker can sniff traffic across VLAN or user ports.
+
+**Defense Tactics:**  
+- switchport port-security  
+- switchport port-security maximum 1  
+- switchport port-security violation shutdown  
+- Limit MACs per port  
+- Enable shutdown or restrict on violation  
+
+---
+
+**🔥 DHCP Spoofing**
+
+**Attack Type:**  
+Rogue DHCP server gives clients fake gateway, DNS, and IP config.
+
+**Effect:**  
+Redirects traffic through attacker (Man-in-the-Middle).
+
+**Defense Tactics:**  
+- ip dhcp snooping  
+- ip dhcp snooping trust  
+- ip dhcp snooping limit rate 15  
+- Trust only valid ports  
+- Block rogue DHCP offers  
+- Enable rate limiting on access ports  
+
+---
+
+**✅ Summary Table**
+
+| Attack        | Effect                          | Key Defense Commands                         |
+|---------------|----------------------------------|----------------------------------------------|
+| VLAN Hopping  | VLAN access via spoofing         | `switchport mode access`, `nonegotiate`      |
+| MAC Flooding  | Switch broadcasts to all ports   | `switchport port-security`                   |
+| DHCP Spoofing | Rogue IP/DNS config to users     | `ip dhcp snooping`, `trust`, `rate limit`    |
+
+---
+
+**Tags:**  
+`network+` `switch-security` `layer2-attacks` `cli-defenses` `mac-flooding` `vlan-hopping` `dhcp-spoofing`
