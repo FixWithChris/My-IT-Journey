@@ -41,3 +41,30 @@
 ### View active RIP configuration:
 ```bash
 show ip protocols
+
+router rip
+version 2
+network 192.168.1.0
+
+router eigrp 100
+network 10.0.0.0
+no auto-summary
+
+show ip eigrp neighbors
+
+show ip eigrp topology
+
+router ospf 1
+network 10.1.1.0 0.0.0.255 area 0
+
+router ospf 1
+network 10.1.1.0 0.0.0.255 area 0
+
+show ip ospf interface
+
+show ip ospf neighbor
+
+router bgp 65001
+neighbor 192.168.2.1 remote-as 65002
+
+show ip bgp summary
