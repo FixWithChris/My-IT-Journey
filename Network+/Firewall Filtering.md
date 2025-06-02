@@ -61,3 +61,75 @@
 
 ## 📁 Tags  
 `network+` `firewalls` `filtering-methods` `dpi` `ngfw` `stateful-firewall` `packet-filtering` `drill-log`
+
+# 🧱 Stateful vs. Stateless Firewall Drill – Network+ Flat Format
+
+**User:** Chris (ct432)  
+**Date:** 2025-06-01  
+**Topic:** Firewall Types – Packet Behavior & Traffic Control
+
+---
+
+## 🔑 Core Difference
+
+| Type      | Tracks Sessions? | Intelligent Filtering? | Speed     | Memory Use | Use Case                         |
+|-----------|------------------|-------------------------|-----------|------------|----------------------------------|
+| **Stateful** | ✅ Yes           | ✅ Yes (context-aware)    | Medium    | High        | Secure corporate networks        |
+| **Stateless** | ❌ No            | ❌ No (per-packet only)   | Fast      | Low         | Lightweight rules, simple edge devices |
+
+---
+
+## ✅ **Stateful Firewall**
+
+- **Remembers active connections**
+- Evaluates packets based on:
+  - Source/destination IP
+  - Port number
+  - **Session state** (e.g., is this part of an existing TCP handshake?)
+- Dynamically opens/blocks ports based on traffic flow
+- **More secure**, but needs more resources
+
+**Example Use:**  
+Corporate perimeter firewall, advanced packet inspection, internal segmentation.
+
+---
+
+## ⚠️ **Stateless Firewall**
+
+- Evaluates packets **individually**, no memory of past packets
+- Relies only on static rules:
+  - "Allow TCP from 192.168.1.5 to port 80"
+- **Faster**, but can't adapt to real-time session data
+
+**Example Use:**  
+Basic packet filtering, cloud firewalls, IoT edge control, DDoS rate-limiting.
+
+---
+
+## 🧠 TCP Session Scenario Example
+
+**You send a TCP packet from your laptop to a web server (port 80).**
+
+| Firewall Type | Behavior |
+|---------------|----------|
+| Stateless     | Sees a TCP packet to port 80, checks rule, allows/blocks it – no session awareness. |
+| Stateful      | Checks if this is part of a valid session (SYN/ACK), and may auto-open return path – context-aware. |
+
+---
+
+## 🚨 Exam Tip
+
+> If the question says “remembers connections,” “tracks sessions,” or “dynamic rule decisions” — it's **stateful**.
+
+If it says “static rules only,” “no memory,” or “packet-by-packet” — it's **stateless**.
+
+---
+
+## 🧱 Real-World Combo
+
+Most enterprise firewalls today are **stateful**, often with stateless filtering at the **edge** (cloud load balancers, pre-screen filters).
+
+---
+
+## 📁 Tags  
+`network+` `firewalls` `stateful` `stateless` `security-filtering` `traffic-flow` `tcp-sessions` `drill-log`
