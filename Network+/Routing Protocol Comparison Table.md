@@ -27,3 +27,17 @@
 
 ## 🗂️ Tags  
 `network+` `routing-protocols` `rip` `eigrp` `ospf` `bgp` `exam-review` `networking-core`
+
+# 🧪 Routing Protocol Command Drill Pack – Network+
+
+**User:** Chris (ct432)  
+**Focus:** Routing Protocol CLI Practice  
+**Date:** 2025-06-01  
+
+---
+
+## 🔄 RIP Command Drills
+
+### View active RIP configuration:
+```bash
+show ip protocols
