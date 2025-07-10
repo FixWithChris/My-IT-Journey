@@ -1,30 +1,38 @@
-# Fiber Optic Cables and Connectors
+# 🧵 Fiber Optic Cables and Connectors
 
 ---
 
-## 🧵 Fiber Types
+## 🔍 Fiber Types
 
-| Type             | Description                                                            |
-|------------------|------------------------------------------------------------------------|
-| **Single Mode**  | Long-distance, small core, laser light, less signal dispersion         |
-| **Multimode**    | Short-distance, larger core, LED light, more dispersion                |
-| **Subscriber Fiber** (or Submarine) | Typically used in subscriber drops (FTTH) or long-haul undersea links (clarify based on source) |
+| Fiber Type         | Description                                                            |
+|--------------------|------------------------------------------------------------------------|
+| **Single Mode**    | Long-distance, small core (9 µm), laser-based light, minimal dispersion |
+| **Multimode**      | Short-distance, larger core (50/62.5 µm), LED light, higher dispersion |
+| **Subscriber Fiber** | Often used for "last mile" delivery in FTTH (Fiber to the Home) setups |
 
-<img src="https://raw.githubusercontent.com/FixWithChris/My-IT-Journey/main/A%2B%20Notes/Core%201/3.0%20Hardware/Fiber%20Optic%20Cables%20and%20Connectors/your-fiber-image.png" width="600"/>
+<img src="https://raw.githubusercontent.com/FixWithChris/My-IT-Journey/main/A%2B%20Notes/Core%201/3.0%20Hardware/Fiber%20Optic%20Cables%20and%20Connectors/IMG_6F149AD9-6980-4E17-92A2-9F35EE362811.jpeg" width="600"/>
 
 ---
 
 ## 🔌 Connector Types
 
-| Connector | Description |
-|-----------|-------------|
-| **SC (Subscriber Connector)** | Push-pull design, used in datacenters |
-| **ST (Straight Tip)**         | Bayonet-style, twist-lock connection |
-| **LC (Lucent Connector)**     | Smaller form factor, popular in modern networks |
-| **MTRJ (Mechanical Transfer Registered Jack)** | Duplex connector, often used in small devices |
+| Connector Type                     | Description                                               |
+|------------------------------------|-----------------------------------------------------------|
+| **SC (Subscriber Connector)**      | Push-pull locking, square design, common in data centers |
+| **ST (Straight Tip Connector)**    | Bayonet-style twist-lock, round shape                    |
+| **LC (Lucent Connector)**          | Small form factor, often used in switches and routers    |
+| **MTRJ (Mechanical Transfer RJ)**  | Compact duplex connector resembling RJ-style plug        |
 
-<img src="https://raw.githubusercontent.com/FixWithChris/My-IT-Journey/main/A%2B%20Notes/Core%201/3.0%20Hardware/Fiber%20Optic%20Cables%20and%20Connectors/your-connector-image.png" width="600"/>
+<img src="https://raw.githubusercontent.com/FixWithChris/My-IT-Journey/main/A%2B%20Notes/Core%201/3.0%20Hardware/Fiber%20Optic%20Cables%20and%20Connectors/IMG_95E1EE67-2EF5-44CA-AAD9-BFEC6FCC8D6B.jpeg" width="600"/>
 
 ---
 
-> 📌 Tip: Use `<img>` with `width="600"` (or 500–700 depending on your layout) for consistent rendering in GitHub README previews.
+## ✅ Summary Notes
+
+- **Single Mode** = Long haul, campus backbone, ISP fiber
+- **Multimode** = Office buildings, short runs, high bandwidth at short distance
+- **SC & LC** = Most common in enterprise
+- **ST** = Older, legacy setups
+- **MTRJ** = Space-saving duplex option
+
+> 📘 **Use `<img>` instead of `![]()` to avoid cutoff in GitHub markdown previews.**
