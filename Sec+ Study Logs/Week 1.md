@@ -55,3 +55,83 @@ Tomorrow transitions into **Malware & Delivery Mechanisms (Day 02)** — how tho
 ---
 
 > “A mind disciplined daily becomes unbreakable.” — *Maestro Journal Entry*
+
+
+--------------------------------------------------------------------------------------------------------------------
+# 🧠 Security+ Daily Log — Day 02  
+**Week:** 1 — Threats, Attacks, and Vulnerabilities  
+**Topic:** Malware & Delivery Mechanisms  
+**Total Study Time:** ≈ 4 h 45 m  
+
+---
+
+## 📘 Gibson Reading
+**Chapters:**  
+- **Ch. 6 – Comparing Threats, Vulnerabilities, and Common Attacks**  
+  - Malware types: Virus, Worm, Trojan, Ransomware, Rootkit, Keylogger, Logic Bomb  
+  - Indicators of infection: unusual pop-ups, CPU spikes, altered files  
+  - Delivery mechanisms: phishing emails, drive-by downloads, infected USBs  
+  - Defensive measures: antivirus, sandboxing, EDR, patching  
+
+**Optional Preview:**  
+- **Ch. 7 – Protecting Against Advanced Attacks** → persistence and stealth techniques  
+
+---
+
+## 🎥 Video & Coursework
+
+### Professor Messer (YouTube — Current SY0-701 Playlist)
+> Search inside playlist for “malware” to jump directly to these:
+- **Malware Types** (~13 min)  
+- **Malware Delivery Methods** (~11 min)  
+- **Malware Indicators** (~10 min)  
+- *(Optional)* **Malware Prevention and Removal** (~12 min)
+
+### Dion Training (Udemy)
+- **Types of Malware** (~10 min)  
+- **Common Delivery Mechanisms** (~10 min)  
+- **Malware Indicators and Symptoms** (~12 min)  
+- **Quiz – Malware and Delivery Mechanisms** (~5 min)
+
+### Optional Lab
+- **TryHackMe:** *Malware Intro Room* → Identify signatures and sandbox analysis.  
+  *(Alternative: run a Defender Offline Scan inside your Windows VM.)*
+
+---
+
+## 🧩 Flashcards Created
+| Malware | Delivery Mechanism | Indicator | Defense |
+|----------|--------------------|------------|----------|
+| **Virus** | Email attachment | File corruption | Antivirus, sandbox testing |
+| **Worm** | Network propagation | Network congestion | Segmentation, firewall |
+| **Trojan** | Fake installer | Unknown process | Application whitelisting |
+| **Ransomware** | Phishing, drive-by | Files encrypted | Backups, user training |
+| **Rootkit** | Privilege escalation | Hidden processes | Secure boot, EDR |
+| **Spyware / Keylogger** | Malicious link | Strange keystroke lag | Anti-spyware tools |
+
+---
+
+## 🎯 Objectives Met
+- Classified major malware categories and how they spread  
+- Recognized behavioral indicators of infection  
+- Practiced mapping malware → delivery → defense  
+- Completed Dion quiz (80 %+ target)  
+- Updated Anki deck with six malware archetypes  
+
+---
+
+## 🧠 Key Takeaways
+- Malware is *software with intent*; delivery mechanisms exploit user trust  
+- Rootkits and worms emphasize stealth and self-propagation  
+- Layered defense (EDR + awareness + least privilege) is strongest  
+- Training users remains the cheapest prevention  
+
+---
+
+## 🔁 Reflection
+Understanding how malware enters and operates connects Day 1’s threat actors to their tools.  
+Tomorrow’s focus: **Social Engineering & Human Exploitation (Day 03)** — the psychological side of attack delivery.  
+
+---
+
+> “Control systems. Control access. Control yourself.” 
