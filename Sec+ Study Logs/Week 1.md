@@ -134,4 +134,30 @@ Tomorrow’s focus: **Social Engineering & Human Exploitation (Day 03)** — the
 
 ---
 
-> “Control systems. Control access. Control yourself.” 
+> “Control systems. Control access. Control yourself.”
+>
+> ---------------------------------------------------------------------------------------------------------------------------
+> # 🧠 Security+ Daily Log — Day 03  
+**Week:** 1 — Threats, Attacks, and Vulnerabilities  
+**Topic:** Social Engineering & Human Exploitation  
+**Total Study Time:** ≈ 4 h 30 m  
+
+---
+
+## 📘 Gibson Reading
+**Chapters:**  
+- **Ch. 6 – Comparing Threats, Vulnerabilities, and Common Attacks**  
+  - Social-engineering fundamentals: influence, urgency, authority  
+  - Common techniques: phishing, spear phishing, pretexting, baiting, tailgating, shoulder surfing  
+  - Defenses: awareness training, verification procedures, technical controls (email filters, MFA)
+
+**Optional Preview:**  
+- **Ch. 11 – Implementing Policies to Mitigate Risks** → Awareness program development & user training frameworks  
+
+---
+
+## 🎥 Video & Coursework  
+
+### Professor Messer (YouTube — Current SY0-701 Playlist)  
+Search within playlist for **“social engineering”** or **“phishing”**; you’ll find:  
+- **Social Engineering Attacks** (~14
