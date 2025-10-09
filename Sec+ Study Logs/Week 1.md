@@ -137,7 +137,8 @@ Tomorrow’s focus: **Social Engineering & Human Exploitation (Day 03)** — the
 > “Control systems. Control access. Control yourself.”
 >
 > ---------------------------------------------------------------------------------------------------------------------------
-> # 🧠 Security+ Daily Log — Day 03  
+
+# 🧠 Security+ Daily Log — Day 03  
 **Week:** 1 — Threats, Attacks, and Vulnerabilities  
 **Topic:** Social Engineering & Human Exploitation  
 **Total Study Time:** ≈ 4 h 30 m  
@@ -160,4 +161,56 @@ Tomorrow’s focus: **Social Engineering & Human Exploitation (Day 03)** — the
 
 ### Professor Messer (YouTube — Current SY0-701 Playlist)  
 Search within playlist for **“social engineering”** or **“phishing”**; you’ll find:  
-- **Social Engineering Attacks** (~14
+- **Social Engineering Attacks** (~14 min)  
+- **Phishing and Vishing** (~9 min)  
+- **Smishing and Spear Phishing** (~8 min)  
+- **Business Email Compromise (BEC)** (~7 min)  
+- *(Optional)* **Social Engineering Defense and Training** (~10 min)  
+
+### Dion Training (Udemy)  
+- *Social Engineering Concepts* (~12 min)  
+- *Types of Phishing and Fraud* (~10 min)  
+- *Human Behavior and Psychological Triggers* (~8 min)  
+- *Quiz – Social Engineering* (~5 min)
+
+### Optional Lab  
+- **TryHackMe:** *Phishing Room* → Explore baiting & payload delivery  
+- Or analyze a sample phishing email header in your VM  
+
+---
+
+## 🧩 Flashcards Created  
+| Technique | Psychological Trigger | Example | Defense |
+|------------|----------------------|----------|----------|
+| **Phishing** | Urgency | Fake invoice email | Email filtering, training |
+| **Spear Phishing** | Personalization / Trust | Targeted exec email | MFA, verification policy |
+| **Pretexting** | Authority | “IT Support needs your password” | Callback verification |
+| **Tailgating** | Courtesy | Piggybacking through door | Badge policy, awareness |
+| **Baiting** | Curiosity | USB labeled “Salary Data” | Endpoint control |
+| **Vishing / Smishing** | Fear or Greed | Fake bank call / text | User education, reporting |
+
+---
+
+## 🎯 Objectives Met  
+- Defined and compared key social-engineering tactics  
+- Linked psychological principles to technical delivery methods  
+- Mapped defenses (technical + training) to each attack type  
+- Completed Dion quiz (≥ 80 %) and flashcard set  
+
+---
+
+## 🧠 Key Takeaways  
+- The weakest link is almost always human behavior  
+- Awareness training is a technical control in human form  
+- Phishing remains the #1 initial access vector in breaches  
+- Politeness and urgency are the most exploited emotions  
+
+---
+
+## 🔁 Reflection  
+Social engineering turns psychology into a weapon. By understanding the emotions behind each attack, I can better anticipate how they penetrate technical defenses.  
+Tomorrow’s focus: **Application & Web Attacks (Day 04)** — how code and inputs are manipulated instead of people.  
+
+---
+
+> “The mind that cannot be fooled cannot be controlled.” 
