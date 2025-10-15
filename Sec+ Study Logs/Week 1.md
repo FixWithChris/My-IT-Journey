@@ -213,4 +213,186 @@ Tomorrow’s focus: **Application & Web Attacks (Day 04)** — how code and inpu
 
 ---
 
-> “The mind that cannot be fooled cannot be controlled.” 
+> “The mind that cannot be fooled cannot be controlled.”
+>
+> ------------------------------------------------------------------------------------------------------------------------------
+> # 🧠 Security+ Study Log — Day 4
+**Focus:** Threat Actors • Vectors • Vulnerabilities  
+**Chapter:** Gibson Ch. 6 — Comparing Threats, Vulnerabilities, and Common Attacks  
+**Duration:** ~4 hrs
+
+---
+
+### 🎯 Topics Covered
+- Threat actors (nation-state, hacktivist, insider, competitor, script kiddie)
+- Attack motivations & resources (financial, political, ideological)
+- Common attack vectors: email, social media, supply chain, removable media
+- Indicators of compromise (IOCs) overview
+- Prevention: user awareness + patch management + supply-chain risk reduction
+
+---
+
+### 🎥 Videos
+**Professor Messer:** “Threat Actors and Attributes” • “Attack Vectors and Intelligence Sources”  
+**Dion Training:** Section 2 – Threat Actors + Motivations (quiz completed)
+
+---
+
+### 🧩 Anki Cards Added
+- Threat actor types & examples (8)
+- Motivations & capabilities (5)
+- Attack vectors (4)
+- Countermeasures summary (3)
+
+---
+
+### 🛡️ Key Takeaways
+> Every threat actor is defined by **motivation + capability + resources.**  
+> Script kiddies experiment; nation-states invest.
+
+---
+
+### ✅ Progress
+- [x] Read pp. 210–223  
+- [x] Watched Messer + Dion segments  
+- [x] Created 20 new Anki cards  
+- [x] Updated repo README progress bar
+
+- [ ] ---------------------------------------------------------------------------------------------------------------------------
+
+- [ ] # 🧠 Security+ Study Log — Day 5
+**Focus:** Social Engineering • Malware Types  
+**Chapters:** Gibson Ch. 6 / 7  
+**Duration:** ~5 hrs
+
+---
+
+### 🎯 Topics Covered
+- Phishing, spear phishing, whaling, vishing, smishing  
+- Pretexting, tailgating, shoulder surfing, dumpster diving  
+- Malware families: virus, worm, trojan, ransomware, spyware, rootkit, logic bomb  
+- Delivery mechanisms: email attachments, drive-by downloads, USB drops  
+- Detection / prevention tools: EDR, AV signatures, sandboxing, user training
+
+---
+
+### 🎥 Videos
+**Professor Messer:**  
+- “Social Engineering Attacks”  
+- “Malware Types and Indicators”  
+**Dion Training:**  
+- Section 2 – Malware + Social Engineering (practice quiz)
+
+---
+
+### 🧩 Anki Cards Added
+- Social-engineering definitions (10)  
+- Malware identification cards (10)  
+- Indicators of compromise (4)  
+
+---
+
+### 💡 Key Notes
+> **Social engineering** exploits people, not code.  
+> Technical defenses fail if humans click the wrong link.  
+> Malware defense = *update + train + layer.*
+
+---
+
+### ✅ Progress
+- [x] Finished Ch. 6  
+- [x] Began Ch. 7 (Advanced Attacks)  
+- [x] 24 new flashcards created  
+- [x] Repo updated (`Day04.md`, `Day05.md`)
+
+- [ ] ----------------------------------------------------------------------------------------------------------
+
+- [ ] # 🧠 Security+ Study Log — Day 6
+**Focus:** Advanced Malware • Fileless Attacks • Persistence  
+**Chapter:** Gibson Ch. 7 — Protecting Against Advanced Attacks  
+**Duration:** ~4 hrs
+
+---
+
+### 🎯 Topics Covered
+- Fileless malware and living-off-the-land (LOTL) techniques  
+- Polymorphic and armored viruses — evasion tactics  
+- Persistence mechanisms (startup tasks, registry hooks, bootkits)  
+- Steganography and data exfiltration methods  
+- Detection tools and forensic response overview  
+
+---
+
+### 🎥 Videos
+**Professor Messer:**  
+- “Fileless Malware and Evasion Techniques”  
+- “Persistence and Defense in Depth”
+
+**Dion Training:**  
+- “Advanced Malware & Evasion Methods” (quiz score 92%)  
+
+---
+
+### 🧩 Anki Cards Added
+- Fileless vs traditional malware (5)  
+- Persistence mechanisms (5)  
+- Evasion terms (polymorphic, armored) (4)  
+- Steganography examples (3)  
+
+---
+
+### 💡 Key Notes
+> “Fileless malware lives in RAM — no files to scan, only behavior to detect.”  
+> **Persistence = staying power.**
+
+---
+
+### ✅ Progress
+- [x] Read pp. 260–275  
+- [x] Watched Messer + Dion modules  
+- [x] Created 17 flashcards  
+- [x] Repo progress updated for Ch. 7
+
+- [ ] ---------------------------------------------------------------------------------------------------------------
+
+- [ ] # 🧠 Security+ Study Log — Day 7
+**Focus:** Comprehensive Review • Practice Quiz • Consolidation  
+**Chapters:** 1 / 6 / 7  
+**Duration:** ~5 hrs
+
+---
+
+### 🎯 Activities
+- Full review of Ch. 1, 6, 7 notes and highlights  
+- 10-question practice quiz (simulation mode) — Score 9/10  
+- Reinforced control types (physical vs technical vs administrative)  
+- Re-watched “Malware Indicators and Prevention” + “MFA Concepts”  
+- Organized and synced Anki decks for Week 1 (Eli5, Input Validation, General Threats)  
+
+---
+
+### 📊 Quiz Results
+| Topic | Status | Notes |
+|--------|---------|-------|
+| Security Principles | ✅ | Least Privilege & Defense in Depth solid |
+| Threat Types | ✅ | Differentiate brute-force vs dictionary vs spray |
+| Malware Evasion | ✅ | Persistence and polymorphism clear |
+| Control Categories | ⚠️ | Re-emphasize physical vs technical boundaries |
+
+---
+
+### 🧩 Deliverables
+- `Week1_Recap.md` created  
+- All three flashcard CSV files finalized and tested in Anki  
+- GitHub commit ready:  
+  ```bash
+  git add SecurityPlus/DailyLogs/Day04.md \
+          SecurityPlus/DailyLogs/Day05.md \
+          SecurityPlus/DailyLogs/Day06.md \
+          SecurityPlus/DailyLogs/Day07.md \
+          SecurityPlus/DailyLogs/Week1_Recap.md
+  git commit -m "Add Security+ Week 1 daily logs and recap (Ch 1, 6, 7)"
+  git push
+
+“Week 1 was about seeing the attacker’s playbook. Now Week 2 — IAM — is about deciding who even gets on the field.”
+Confidence up, systems tight, ready for identity control concepts.
