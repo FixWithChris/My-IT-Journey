@@ -1,0 +1,49 @@
+# Cisco Packet Tracer – ARP Cache Troubleshooting Lab
+
+## Objective
+Diagnose and resolve a situation where devices on the same subnet fail to communicate after adding a switch.
+
+---
+
+## Initial Topology
+- Multiple PCs
+- One Cisco 2960 switch
+- All devices:
+  - On the same subnet
+  - Correct IP addressing
+  - Green link indicators
+  - Straight-through cables
+- Simulation Mode running
+
+---
+
+## Problem Observed
+- `ping` between PCs would **stall** (no replies, no immediate timeout)
+- Connectivity **worked before** adding the switch
+- Following a tutorial exactly, but results differed
+
+---
+
+## Key Observations
+- No Layer 1 issues (links up, correct cabling)
+- No Layer 3 issues (same subnet, valid IPs)
+- Ping stalled instead of failing immediately
+- Yellow ARP envelopes appeared before green ICMP envelopes
+
+---
+
+## Root Cause
+**Stale ARP cache on the PC**
+
+- ARP entries were learned **before** the switch was added
+- After topology changed, the PC kept using incorrect MAC-to-IP mappings
+- Switch MAC table and PC ARP cache were out of sync
+- Result: ARP resolution failed, so ICMP never completed
+
+---
+
+## Resolution
+Cleared the ARP cache on the source PC:
+
+```bash
+arp -d
