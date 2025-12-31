@@ -1,0 +1,231 @@
+# 🌙 Study Session Log — Windows Networking & System Diagnostics
+
+**Focus:** Practical troubleshooting, Windows internals, and technician-level reasoning  
+**OS:** Windows 11 Pro  
+**Environment:** Physical Windows + UTM Virtual Machine  
+**Goal:** Build diagnostic instinct, not rote memorization
+
+---
+
+## 1️⃣ Control Panel vs Settings — Technician Mental Model
+
+### Core Distinction
+- **Settings**
+  - Modern, user-facing
+  - Permissions, apps, accounts
+  - First stop for basic configuration
+- **Control Panel**
+  - Legacy but critical
+  - Hardware, drivers, advanced troubleshooting
+  - Preferred for diagnostics and repair
+
+**Rule:**
+> If it sounds technical or repair-oriented, start with Control Panel.
+
+---
+
+### High-Yield Control Panel Tools Reviewed
+- **Devices and Printers** — peripherals, printers
+- **Programs and Features** — uninstall/repair desktop apps
+- **System** — OS version, hardware, activation
+- **Network and Sharing Center** — adapter status (legacy)
+- **Windows Defender Firewall** — inbound/outbound rules
+- **Sound** — default playback/recording devices
+- **Device Manager** — drivers, yellow warning triangles
+- **Indexing Options** — broken Windows Search
+- **Administrative Tools**
+  - Event Viewer
+  - Computer Management
+- **File Explorer Options** — show extensions, hidden files
+- **Power Options** — sleep, lid close behavior
+
+---
+
+### Key Settings Areas Reviewed
+- **Apps** — uninstall Store apps, default apps
+- **Network & Internet** — connection status, adapter config
+- **Privacy** — camera/microphone permissions
+- **Devices** — mouse, keyboard, basic printer setup
+- **Accounts** — local vs Microsoft users
+- **Gaming** — Game Mode, Game Bar
+- **Update & Security** — updates, recovery
+
+---
+
+## 2️⃣ Windows Shortcut Files & Command Decoding
+
+### `.cpl` — Control Panel Applets
+- `ncpa.cpl` — Network Connections
+- `appwiz.cpl` — Programs and Features
+- `sysdm.cpl` — System Properties
+- `powercfg.cpl` — Power Options
+- `mmsys.cpl` — Sound
+
+**Rule:**
+> `.cpl` = opens a Control Panel tool directly
+
+---
+
+### `.msc` — Management Consoles
+- `devmgmt.msc` — Device Manager
+- `eventvwr.msc` — Event Viewer
+- `services.msc` — Services
+- `diskmgmt.msc` — Disk Management
+- `compmgmt.msc` — Computer Management
+- `wf.msc` — Windows Defender Firewall (Advanced)
+
+---
+
+### CLI Command Meaning (Key Insight)
+Understanding what commands *stand for* makes them memorable:
+- `netsh` = Network Shell
+- `ipconfig` = IP configuration
+- `nslookup` = Name Server lookup
+- `arp` = Address Resolution Protocol
+- `tracert` = Trace Route
+- `netstat` = Network Statistics
+
+---
+
+## 3️⃣ UTM LABS — Hands-On Networking Work
+
+### LAB 1 — Network Identity & Adapter Control (UTM)
+**Tools:** `ipconfig`, `ncpa.cpl`
+
+- Identified active virtual Ethernet adapter
+- Verified IPv4 address, subnet mask, and gateway
+- Confirmed gateway was in the same subnet
+- Observed UTM NAT-style networking
+- Practiced disabling/enabling adapter
+
+**Outcome:**  
+Confirmed Layer 2 and Layer 3 health
+
+---
+
+### LAB 2 — DNS vs Connectivity
+**Tools:** `ping`, `ipconfig /all`
+
+Key realization:
+- DNS is **not** all-or-nothing
+- Some sites can resolve while others fail
+
+**Rules learned:**
+- IP fails → gateway/routing issue
+- Names fail → DNS issue
+- Google working ≠ DNS healthy
+
+---
+
+### LAB 3 — Network Shell Context (`netsh`)
+**Tools:** `netsh`, `netsh wlan show profiles`
+
+Key insight:
+- Commands are context-dependent
+- WLAN commands failed because:
+  - No Wi-Fi adapter
+  - VM used Ethernet
+  - `wlansvc` not required
+
+**Lesson:**
+> A command failing does not always mean something is broken.
+
+---
+
+## 4️⃣ DNS Failure Simulation (Modern Windows 11 Reality)
+
+### Initial Attempt — Adapter DNS Change
+- Manually set invalid DNS
+- DNS resolution **still worked**
+
+### Why DNS Didn’t Break
+- DNS caching
+- DNS over HTTPS (DoH)
+- Smart resolver fallback
+- Hypervisor DNS forwarding (UTM)
+
+**Critical realization:**
+> Modern Windows may bypass adapter DNS settings.
+
+---
+
+### Definitive DNS Break — Firewall Method
+**Tool:** `wf.msc`
+
+- Blocked outbound TCP/UDP port 53
+- `nslookup` failed
+- `ping 8.8.8.8` still worked
+
+**Conclusion:**
+- Connectivity intact
+- DNS conclusively broken
+
+---
+
+### Key DNS Truths Learned
+- `ping` is not a DNS test
+- `nslookup` is a DNS test
+- DNS can fail selectively
+- Windows DNS is layered and resilient
+
+---
+
+## 5️⃣ Exam-Style Troubleshooting Reasoning
+
+### Ticket Scenario Practiced
+> “Some websites work, others don’t. It worked yesterday.”
+
+Correct logic chain:
+1. Network is up
+2. Gateway works
+3. Selective failure = DNS
+4. Check DNS configuration
+5. Flush cache: `ipconfig /flushdns`
+6. Verify with `nslookup`
+
+---
+
+### Technician Communication Practice
+Example user explanation:
+> “Your internet connection is working, but your computer is using the wrong address book for some sites. I’m refreshing that now.”
+
+---
+
+## 6️⃣ Subnet Confidence Reinforcement
+
+- Block size recognition without binary
+- Confirming gateway is in same subnet
+- Understanding subnet checks as **pattern recognition**, not math
+- Reinforced trust in existing subnet knowledge under pressure
+
+---
+
+## 🧠 Major Takeaways from the Session
+
+- DNS is layered, cached, encrypted, and context-dependent
+- Modern Windows behaves differently than older tutorials
+- VM networking adds abstraction but follows the same logic
+- Context matters more than commands
+- Diagnosis comes before fixing
+- Confidence comes from observing real failures
+
+---
+
+## ✅ Session Outcome
+
+By the end of this session:
+- DNS behavior is no longer abstract
+- Command abbreviations are intuitive
+- Control Panel vs Settings decisions are instinctive
+- VM networking behavior makes sense
+- Troubleshooting order is deliberate and confident
+
+---
+
+## 📌 Next Logical Steps
+- Hosts file hijack lab
+- VPN / split DNS simulation
+- Disk & OS repair labs (`sfc`, `dism`, `chkdsk`)
+- Timed A+ troubleshooting drills
+
+---
