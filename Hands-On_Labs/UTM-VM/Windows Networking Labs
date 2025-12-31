@@ -1,0 +1,28 @@
+# 🧪 Windows Networking Labs (UTM VM)
+
+These labs are designed to build **diagnostic instinct**, not command memorization.
+All labs were performed on **Windows 11 Pro running in a UTM virtual machine**.
+
+---
+
+## LAB 1 — Network Identity & Adapter Control (UTM)
+
+### 🎯 Objective
+- Identify active network adapter
+- Verify IP configuration
+- Confirm gateway and subnet validity
+- Understand VM-based networking context
+
+---
+
+### 🧠 Commands & Tools Used
+- `ipconfig`
+- `ncpa.cpl`
+
+---
+
+### 🧪 Steps
+1. Open **Command Prompt**
+2. Run:
+   ```cmd
+   ipconfig
